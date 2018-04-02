@@ -94,9 +94,10 @@ namespace Nez
 		}
 
 
-		protected override void OnApply()
+		protected override Boolean OnApply()
 		{
 			_timeParam.SetValue( Time.time );
+			return true;
 		}
 	}
 }
